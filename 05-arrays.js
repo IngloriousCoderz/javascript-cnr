@@ -8,6 +8,7 @@ console.log(numbers);
 const firstItem = numbers[0];
 const secondItem = numbers[1];
 const lastItem = numbers[numbers.length - 1];
+const anotherWay = numbers.at(-1);
 console.log(firstItem, secondItem, lastItem);
 
 // C
@@ -111,4 +112,21 @@ console.log(numbers);
     ...numbers.slice(3),
   ];
   console.log(numbers, newNumbers);
+}
+
+for (let i = 0; i < numbers.length; i++) {
+  console.log(i, numbers[i]);
+}
+
+for (let i in numbers) {
+  console.log(i, numbers[i]);
+}
+
+delete numbers[2];
+console.log(numbers, numbers.length);
+numbers[2] = 3;
+console.log(numbers);
+
+for (let item of numbers) {
+  console.log(item);
 }

@@ -12,7 +12,8 @@ while (valutazione) {
 
 {
   let age = 0; // inizializzazione
-  while (age < 20) { // valutazione
+  while (age < 20) {
+    // valutazione
     console.log("Play and go to school");
     age = age + 1; // aggiornamento
     // age += 1;
