@@ -42,12 +42,12 @@ numbers.forEach((item) => console.log(item));
 
 // squares: [1, 2, 3, 4, 5] -> [1, 4, 9, 16, 25]
 {
-  const squares = [];
+  const squares = []; // inizializzazione
   numbers.forEach((item) => {
     const square = item ** 2;
-    squares.push(square);
+    squares.push(square); // accumulo
   });
-  console.log(squares);
+  console.log(squares); // ritorno
 }
 
 {

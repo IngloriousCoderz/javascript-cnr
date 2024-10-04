@@ -72,21 +72,21 @@ console.log(a);
   console.log(person, newPerson);
 }
 
-for (let key in person) {
+for (const key in person) {
   console.log(key, person[key]);
 }
 
 const keys = Object.keys(person);
-for (let key of keys) {
+for (const key of keys) {
   console.log(key, person[key]);
 }
 
 const values = Object.values(person);
-for (let value of values) {
+for (const value of values) {
   console.log(value);
 }
 
 const entries = Object.entries(person);
-for (let entry of entries) {
-  console.log(entry);
+for (const [key, value] of entries) {
+  console.log(key, value);
 }

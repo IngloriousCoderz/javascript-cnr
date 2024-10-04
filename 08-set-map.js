@@ -31,3 +31,5 @@ const map = new Map();
 map.set(0, "Matteo Antony");
 map.set(null, "Mistretta");
 console.log(map.get(null));
+
+// weak set, weak map

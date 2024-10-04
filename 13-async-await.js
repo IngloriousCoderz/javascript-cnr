@@ -10,8 +10,11 @@ async function checkFirstUsersBalance() {
     return balance;
   } catch (err) {
     console.error(err);
+  } finally {
   }
 }
+
+// const doSomething = async () => {}
 
 checkFirstUsersBalance().then(console.log);
 

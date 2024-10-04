@@ -56,7 +56,8 @@ fetchUsers()
   })
   .catch((err) => {
     console.error(err);
-  });
+  })
+  .finally(() => {});
 
 Promise.all([
   fetchUserDetail(firstUser.id),
